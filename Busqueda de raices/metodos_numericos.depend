@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1772983455 source:m:\codeblocks\metodos_numericos\biseccion.cpp
+	<stdio.h>
+	"lib.h"
+
+1772985345 m:\codeblocks\metodos_numericos\lib.h
+	<stdio.h>
+	<math.h>
+
+1772985143 source:m:\codeblocks\metodos_numericos\main.cpp
+	<stdio.h>
+	"lib.h"
+
