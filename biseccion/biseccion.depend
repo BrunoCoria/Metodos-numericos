@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1773635198 source:m:\codeblocks\biseccion\main.cpp
+	<stdio.h>
+	"lib.h"
+
+1773635269 m:\codeblocks\biseccion\lib.h
+	<stdio.h>
+	<math.h>
+

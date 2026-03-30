@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1774844516 source:m:\codeblocks\triseccion_newton\main.cpp
+	<stdio.h>
+	<math.h>
+

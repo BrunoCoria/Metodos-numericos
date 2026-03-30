@@ -17,7 +17,7 @@ float biseccion_n_pasos(float a, float b, int n);
 
 // Funcion F(X) para biseccion
 float F(float x) {
-    return x-10;
+    return pow(M_E, -x)- sin(x);
 }
 
 /*
@@ -150,15 +150,14 @@ void mostrar_secuencia(float *p, int max) {
 
 float biseccion_n_pasos(float a, float b, int n) {
     float c;
-    float secuencia[20];
-    int i=0, j=0;
+    int i=0;
     do {
         c = (a+b)/2;
-        secuencia[i] = c;
+        if(F(c)==0) return c;
         if((sgn(F(a))*sgn(F(c))) < 0) b=c;
         else a=c;
         i++;
-    } while(j<=n);
+    } while(i<=n);
     return c;
 }
 
