@@ -6,8 +6,9 @@ float f(float x);
 float newton(float epsilon, float x0);
 
 int main() {
-    float raiz = newton(0.5, -8);
-    printf("%.2f", raiz);
+    float x0=-2;
+    float raiz = newton(0.000001, x0);
+    printf("Raiz=%.2f \n", raiz);
     return 0;
 }
 
@@ -21,14 +22,15 @@ float newton(float epsilon, float x0){
             break;
         }
         xn = xa - f(xa)/f_prima(xa);
+        printf("%f \n", xn);
     } while(fabs(xn-xa) >= epsilon);
     return xn;
 }
 
 float f(float x) {
-    return pow(x,2)+6*x-2;
+    return exp(-x) - sin(x);
 }
 
 float f_prima(float x){
-    return 2*x+6;
+    return -cos(x) -1*exp(-x);
 }
